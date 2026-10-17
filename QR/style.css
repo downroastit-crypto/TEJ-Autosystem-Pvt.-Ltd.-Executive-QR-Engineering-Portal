@@ -1,0 +1,740 @@
+/* ==========================================================================
+   TEJ AUTOSYSTEM PVT. LTD. - EXECUTIVE ENGINEERING PORTAL
+   Dual-Engine Responsive Design: Expansive Desktop & Flawless Mobile-First
+   Swiss Industrial Precision • Zero Slop • Pure Engineering Aesthetics
+   ========================================================================== */
+
+:root {
+  /* High-End Industrial Monochrome & Corporate Navy */
+  --ink-primary: #0F172A;
+  --ink-secondary: #334155;
+  --ink-muted: #64748B;
+  --ink-subtle: #94A3B8;
+
+  --navy-dark: #071527;
+  --navy-deep: #0A2540;
+  --navy-hover: #06192E;
+
+  --surface-base: #F8FAFC;
+  --surface-white: #FFFFFF;
+  --surface-subtle: #F1F5F9;
+
+  --line-hairline: #E2E8F0;
+  --line-strong: #CBD5E1;
+
+  /* Official WhatsApp Tokens */
+  --wa-teal: #008069;
+  --wa-dark-teal: #075E54;
+  --wa-canvas: #EFEAE2;
+  --wa-bubble: #FFFFFF;
+  --wa-action-green: #25D366;
+  --wa-action-hover: #1EBE5D;
+
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+/* Base Reset & Fluid Shield */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--surface-base);
+  color: var(--ink-primary);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   Responsive Container System
+   ========================================================================== */
+.site-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .site-container {
+    padding: 0 28px;
+  }
+}
+
+/* ==========================================================================
+   Full-Width Executive Engineering Masthead
+   ========================================================================== */
+.masthead {
+  background-color: var(--navy-dark);
+  color: #FFFFFF;
+  border-bottom: 2px solid var(--navy-deep);
+  padding: 20px 0;
+}
+
+.masthead-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 840px) {
+  .masthead-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.company-name {
+  font-size: 1.30rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.company-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #94A3B8;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.masthead-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #CBD5E1;
+}
+
+@media (min-width: 840px) {
+  .masthead-meta {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.meta-location {
+  word-break: break-word;
+}
+
+.meta-quick-links {
+  display: flex;
+  align-items: center;
+  gap: 6px 10px;
+  flex-wrap: wrap;
+}
+
+.meta-link {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.meta-sep {
+  opacity: 0.4;
+}
+
+/* ==========================================================================
+   Main Content Layout & Section Architecture
+   ========================================================================== */
+.main-content {
+  padding: 24px 16px 52px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 40px 28px 72px;
+  }
+}
+
+/* Intro Heading Banner (Manufacturing Scope) */
+.portal-intro-banner {
+  background-color: var(--surface-white);
+  border: 1px solid var(--line-strong);
+  border-left: 4px solid var(--navy-deep);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 6px rgba(10, 37, 64, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (min-width: 640px) {
+  .portal-intro-banner {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    padding: 14px 20px;
+    margin-bottom: 36px;
+  }
+}
+
+.intro-prefix {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--navy-deep);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.intro-content {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  line-height: 1.45;
+}
+
+.portal-section {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .portal-section {
+    margin-bottom: 48px;
+  }
+}
+
+.section-header {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-hairline);
+}
+
+.section-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--navy-deep);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.section-subtitle {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  margin-top: 3px;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem;
+  }
+}
+
+/* ==========================================================================
+   1. The 2 Catalogues (Side-by-Side on Desktop, Stacked on Mobile)
+   ========================================================================== */
+.catalogues-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 840px) {
+  .catalogues-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+.catalogue-card {
+  border: 1px solid var(--line-hairline);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  background-color: var(--surface-white);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .catalogue-card {
+    padding: 20px;
+  }
+
+  .catalogue-card:hover {
+    border-color: var(--line-strong);
+    box-shadow: 0 6px 20px rgba(10, 37, 64, 0.06);
+  }
+}
+
+.catalogue-card-body {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.catalogue-thumb-wrap {
+  flex-shrink: 0;
+}
+
+.catalogue-thumb {
+  width: 72px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--line-strong);
+  background-color: var(--surface-subtle);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+@media (min-width: 768px) {
+  .catalogue-thumb {
+    width: 90px;
+    height: 120px;
+  }
+}
+
+.catalogue-info {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.catalogue-name {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+
+.catalogue-spec {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--navy-deep);
+  margin-bottom: 6px;
+}
+
+.catalogue-desc {
+  font-size: 0.80rem;
+  color: var(--ink-muted);
+  line-height: 1.42;
+}
+
+/* Action Buttons (Stacked on Mobile, 2-Col Grid on Desktop) */
+.catalogue-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (min-width: 520px) {
+  .catalogue-actions {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 10px;
+  }
+}
+
+/* Common Button Foundation */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.84rem;
+  font-weight: 700;
+  min-height: 48px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 0;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-dark {
+  background-color: var(--navy-deep);
+  color: #FFFFFF;
+}
+
+.btn-dark:hover {
+  background-color: var(--navy-hover);
+}
+
+.btn-dark:active {
+  background-color: #04101E;
+}
+
+.btn-subtle {
+  background-color: var(--surface-white);
+  color: var(--navy-deep);
+  border: 1.5px solid var(--line-strong);
+}
+
+.btn-subtle:hover {
+  background-color: var(--surface-subtle);
+  border-color: var(--navy-deep);
+}
+
+.btn-subtle:active {
+  background-color: #E2E8F0;
+}
+
+/* ==========================================================================
+   2. Direct Contact & Technical Leadership (Encircled Segment)
+   ========================================================================== */
+.card-details-standalone {
+  background-color: var(--surface-white);
+  border: 1px solid var(--line-hairline);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card-details-standalone {
+    padding: 24px;
+    gap: 18px;
+  }
+}
+
+.executive-dossier {
+  border-bottom: 1px solid var(--line-hairline);
+  padding-bottom: 14px;
+}
+
+.dossier-title {
+  font-size: 1.30rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+  line-height: 1.2;
+}
+
+.dossier-role {
+  font-family: var(--font-mono);
+  font-size: 0.80rem;
+  font-weight: 700;
+  color: var(--navy-deep);
+  margin-top: 3px;
+}
+
+.dossier-bio {
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.direct-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.channel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: var(--surface-subtle);
+  border: 1px solid var(--line-hairline);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  min-height: 52px;
+  min-width: 0;
+  transition: all 0.15s ease;
+}
+
+.channel-row:hover {
+  background-color: #EBF0F7;
+  border-color: var(--line-strong);
+}
+
+.channel-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1px solid var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy-deep);
+  flex-shrink: 0;
+}
+
+.channel-text {
+  flex-grow: 1;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-label {
+  font-size: 0.70rem;
+  color: var(--ink-muted);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.channel-value {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.channel-cta {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--navy-deep);
+  padding: 6px 11px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--line-strong);
+  flex-shrink: 0;
+}
+
+.facility-row {
+  background-color: var(--surface-white);
+}
+
+.facility-row .channel-value {
+  white-space: normal;
+  line-height: 1.35;
+}
+
+/* WhatsApp Channel Accent */
+.channel-wa-row {
+  background-color: #F0FDF4;
+  border-color: #BBF7D0;
+}
+
+.channel-wa-row:hover {
+  background-color: #DCFCE7;
+  border-color: #86EFAC;
+}
+
+.channel-icon.wa-icon {
+  background-color: var(--wa-action-green);
+  color: #FFFFFF;
+  border-color: var(--wa-action-green);
+}
+
+.channel-cta-wa {
+  background-color: var(--wa-action-green);
+  color: #FFFFFF;
+  border-color: var(--wa-action-green);
+}
+
+.channel-cta-wa:hover {
+  background-color: var(--wa-action-hover);
+}
+
+.meta-wa-link {
+  color: #86EFAC !important;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Corporate Masthead Footer
+   ========================================================================== */
+.portal-footer {
+  padding: 28px 0;
+  border-top: 1px solid var(--line-hairline);
+  background-color: var(--surface-white);
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.footer-brand {
+  font-weight: 800;
+  color: var(--ink-primary);
+}
+
+.footer-tagline {
+  font-size: 0.76rem;
+  color: var(--ink-muted);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--navy-deep);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Modals (Executive Lightbox & PDF Reader)
+   ========================================================================== */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 21, 39, 0.78);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-backdrop.active {
+  display: flex;
+}
+
+.modal-dialog {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+}
+
+.modal-dialog-pdf {
+  max-width: 1040px;
+  height: 88vh;
+}
+
+.modal-top {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface-subtle);
+  border-bottom: 1px solid var(--line-hairline);
+}
+
+.modal-label {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--ink-primary);
+}
+
+.modal-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-tiny {
+  padding: 6px 12px;
+  font-size: 0.76rem;
+  background-color: var(--navy-deep);
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.modal-x {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #E2E8F0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--ink-primary);
+  transition: background 0.15s ease;
+}
+
+.modal-x:hover {
+  background-color: #CBD5E1;
+}
+
+.modal-iframe-box {
+  flex-grow: 1;
+  background-color: #1E293B;
+}
+
+#pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

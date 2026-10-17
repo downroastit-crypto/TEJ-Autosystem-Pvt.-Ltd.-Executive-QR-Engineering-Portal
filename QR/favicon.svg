@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Outer Rounded Shield -->
+  <rect width="64" height="64" rx="14" fill="#071527" />
+  
+  <!-- Precision Industrial Conveyor Loop -->
+  <!-- Top track -->
+  <path d="M18 20H46C51.523 20 56 24.477 56 30C56 35.523 51.523 40 46 40H18C12.477 40 8 35.523 8 30C8 24.477 12.477 20 18 20Z" stroke="#0284C7" stroke-width="3" stroke-linecap="round" fill="none" />
+  
+  <!-- Conveyor Roller Bearings -->
+  <circle cx="18" cy="30" r="4.5" fill="#38BDF8" />
+  <circle cx="32" cy="30" r="4.5" fill="#25D366" />
+  <circle cx="46" cy="30" r="4.5" fill="#38BDF8" />
+
+  <!-- Directional Automation Vector Chevron -->
+  <path d="M26 48L32 54L38 48" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

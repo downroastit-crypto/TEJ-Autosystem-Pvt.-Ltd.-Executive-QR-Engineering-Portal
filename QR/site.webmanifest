@@ -1,0 +1,17 @@
+{
+  "name": "TEJ Autosystem | Executive Engineering Portal",
+  "short_name": "TEJ Portal",
+  "description": "Executive QR portal for TEJ Autosystem Pvt. Ltd. Access turnkey conveyor automation, warehousing solutions, and engineering catalogues.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#071527",
+  "theme_color": "#071527",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

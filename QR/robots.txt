@@ -1,0 +1,7 @@
+# Robots.txt for TEJ Autosystem Executive Portal
+User-agent: *
+Allow: /
+Allow: /assets/*.pdf
+Allow: /assets/*.jpg
+
+Sitemap: https://www.taplindia.net/qr/sitemap.xml
